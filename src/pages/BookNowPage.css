@@ -1,0 +1,89 @@
+Reset basic margin and padding
+* {
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* padding-top: 40px; */
+}
+
+/* Page container */
+.booknow-container {
+    display: flex ; 
+    /* Use flexbox for layout */
+    
+    flex-direction: row; /* Arrange cards in a row */
+    /*flex-wrap: rap; /* Prevent wrapping */
+    justify-content: center; /* Align cards to the start */
+    gap: 20px; /* Space between cards */
+    padding-top: 120px;
+    min-height: 100vh;
+    background-color: #0c487c; /* Light gray background */
+    /*min-height: 40vh; /* Full-page height */
+    /* Allow horizontal scrolling if necessary */
+   overflow-y: scroll;
+   
+}
+
+/* Maid Card container styling */
+.maid-card {
+    
+    background-color: white; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 250px; /* Card width */
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+.maid-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Card content styling */
+.maid-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF; /* Blue text */
+    margin-bottom: 10px;
+}
+
+.maid-card-description {
+    
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.maid-card-button {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.maid-card-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .maid-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+/* Optional: Hide horizontal scrollbar on smaller screens (it will appear on larger screens) */
+@media (max-width: 480px) {
+    .booknow-container {
+        overflow-y: scroll; /* Keep horizontal scroll */
+    }
+}

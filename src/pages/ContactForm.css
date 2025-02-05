@@ -1,0 +1,101 @@
+/* ContactForm.css */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Gradient background */
+    padding: 2rem;
+  }
+  
+  .contact-content {
+    background: white;
+    border-radius: 1.5rem; /* Rounded corners */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .contact-quote {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between form elements */
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #ced4da; /* Consistent border width */
+    border-radius: 0.75rem; /* Rounded corners */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+  }
+  
+  .submit-button {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7); /* Gradient background */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(135deg, #0b5ed7, #0d6efd); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .contact-heading {
+      font-size: 2rem; /* Smaller heading on mobile */
+    }
+  
+    .contact-quote {
+      font-size: 1rem; /* Smaller quote on mobile */
+    }
+  
+    .form-input,
+    .form-textarea {
+      font-size: 0.9rem; /* Smaller input text on mobile */
+    }
+  
+    .submit-button {
+      font-size: 0.9rem; /* Smaller button text on mobile */
+    }
+  }

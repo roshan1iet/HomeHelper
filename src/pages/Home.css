@@ -1,0 +1,276 @@
+/* General Styling */
+body {
+    background: linear-gradient(to right, #a8aae4, rgb(30, 182, 238));
+    /* color: white; */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    opacity: 0.3px;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 232, 232); /* Add a dark overlay for better text visibility */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #e6b800;
+}
+
+
+
+
+/* Services section styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the service cards */
+    margin: 20px 0;
+}
+
+/* Individual service card styles */
+.service-card {
+    border: 1px solid #050000;
+    color: #050254;
+    background-color: #ffcc00;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Fixed width for service cards */
+    box-shadow: 0 2px 5px rgba(104, 143, 250, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Center-align text inside the card */
+}
+
+/* Service card hover effect */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-us {
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.about-us h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about-us p {
+    font-size: 1.2rem;
+    color: #0e0e0e;
+}
+
+
+
+.testimonials {
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+    text-align: center;
+}
+
+.testimonials h2 {
+
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.testimonial-card {
+    background-color: #f4c91e;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 500px;
+}
+
+.testimonial-card strong {
+    color: rgb(0, 0, 94);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    padding: 12px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #e6b800;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #ffcc00;
+    padding: 15px;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.explore-button {
+    padding: 8px 15px;
+    background-color: #346eac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #064c92;
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    background-color: #ffcc00;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.nav-btn {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #067af7;
+    color: white;
+    font-size: 1.2rem;  /* Bigger size for arrows */
+}
+
+.nav-btn:hover {
+    background-color: #064c92;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

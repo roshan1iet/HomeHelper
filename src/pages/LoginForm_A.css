@@ -1,0 +1,62 @@
+/* Center the form on the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding */
+  background: linear-gradient(to right, #a8aae4, rgb(30, 182, 238)); /* Gradient background */
+}
+
+/* Style the card */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Adjust padding as needed */
+  background-color: #fff; /* White background */
+  width: 100%;
+  max-width: 400px; /* Limit maximum width for larger screens */
+}
+
+/* Style the form elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Adjust padding */
+  font-size: 16px; /* Font size */
+}
+
+/* Validation message styling */
+.validation-message {
+  font-size: 14px; /* Font size for validation message */
+  margin-top: 5px; /* Space above the message */
+}
+
+/* Link styling */
+.text-decoration-none {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Link color */
+}
+
+.text-decoration-none:hover {
+  text-decoration: underline; /* Underline on hover */
+}

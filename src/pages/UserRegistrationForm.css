@@ -1,0 +1,158 @@
+/* UserRegistrationForm.css */
+.registration-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Gradient background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .registration-card {
+    background: white;
+    border-radius: 1.5rem; /* Increased border radius */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem; /* Increased padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .registration-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .role-selection {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .role-selection h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .role-btn {
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px; /* Increased border radius */
+    transition: all 0.3s ease;
+    border-width: 2px;
+    padding: 1rem 2rem; /* Increased padding */
+    margin: 0.5rem 0;
+    background: linear-gradient(135deg, #2563eb, #1e40af); /* Gradient background */
+    color: white;
+    border: none;
+  }
+  
+  .role-btn:hover {
+    background: linear-gradient(135deg, #1e40af, #2563eb); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  
+  .role-btn.outline-primary {
+    background: transparent;
+    border-color: #2563eb;
+    color: #2563eb;
+  }
+  
+  .role-btn.outline-primary:hover {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .form-control {
+    border-radius: 0.75rem; /* Increased border radius */
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #ced4da;
+  }
+  
+  .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .invalid-feedback {
+    font-size: 0.875rem;
+    color: #dc3545;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7); /* Gradient background */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* Increased border radius */
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7, #0d6efd); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+    background: transparent;
+  }
+  
+  .btn-outline-primary:hover {
+    background: #0d6efd;
+    color: white;
+  }
+  
+  /* Password strength indicator */
+  .password-strength {
+    height: 6px; /* Increased height */
+    margin-top: 0.5rem;
+    background: #eee;
+    border-radius: 3px; /* Increased border radius */
+    overflow: hidden;
+  }
+  
+  .password-strength::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    transition: width 0.3s ease;
+  }
+  
+  .password-strength.weak::after { width: 30%; background: #dc3545; }
+  .password-strength.medium::after { width: 60%; background: #ffc107; }
+  .password-strength.strong::after { width: 100%; background: #198754; }
+  
+  @media (max-width: 768px) {
+    .registration-container {
+      padding: 1rem;
+    }
+  
+    .registration-card {
+      padding: 1.5rem;
+    }
+  
+    .role-selection {
+      padding: 1rem;
+    }
+  
+    .role-btn {
+      font-size: 1rem;
+      padding: 0.8rem !important;
+    }
+}
+.role-selection .d-grid {
+    gap: 1.5rem; /* Custom gap size */
+  }

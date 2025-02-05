@@ -1,0 +1,46 @@
+.service-page {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.worker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.worker-card {
+    background: #ffcc00;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.worker-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.book-now-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.book-now-button {
+    padding: 12px 20px;
+    background-color: #3958af;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: #069a37;
+}

@@ -1,0 +1,107 @@
+
+.container {
+    margin-top: 500px; /* Increases space above the form */
+    padding-top: 695px; /* Keeps internal padding unchanged */
+    max-width: 600px;
+    padding-bottom: 700px;
+    /* max-height: 200px; */
+    margin-bottom: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Form label */
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Form control inputs (text fields, select dropdowns) */
+.form-control {
+    width: 100%;
+    padding-top: 100px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styles */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* File input styling */
+input[type="file"] {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Multiple selection (Skills) dropdown */
+.form-control[multiple] {
+    height: 150px;
+}
+
+/* Display selected skills */
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Optional language input field (Other language) */
+input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+/* General spacing */
+.row {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 200px;
+}
+
+/* Layout for form elements */
+@media (max-width: 768px) {
+    .col-md-6 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+}
